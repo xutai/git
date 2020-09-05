@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>They Call it Home</title>
+    <meta name="author" content="xutai">
+    <meta name="description" content="The homepage aims to provide complete author's personal projects and knowledge">
+    <base href="" target="_blank">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- <link rel="preload" href="/styles/normalize.css" as="style"> -->
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <!-- <link rel="preload" href="/styles/common.css" as="style"> -->
+    <link rel="stylesheet" href="/styles/common.css">
+    
+    
+    <script src="/scripts/imageChanger.js" defer></script>
+    
+    
+    
+    <!--[if lte IE 8]>
+        <script src="js/browser_support/ie-fix.js"></script>
+        <link href="css/browser_support" rel="stylesheet" type="text/css">
+    <![endif]-->
+    
+    
+    
+
+    <!-- <link rel="preload" href="js/dom/change_style.js" as="script"> -->
+    <!-- <script src="js/dom/change_style.js" defer></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header">Design You Life</h1>
+
+            <form class="userinfo header" role="search">
+                <input type="text" id="loginInput" name="login">
+                <p>
+                    <span class="username"></span>
+                    <span><a href="" class="logout" style="display: none;">logout</a></span>
+                    <span><a href="/login" class="login">login</a></span>
+                    <span><a href="/register" class="register">register</a></span>
+                </p>
+
+            </form>
+
+
+            <nav class="header">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/pages/web-development/job/index.html">job</a></li>
+                    <li><a href="/pages/life/index.html">life</a></li>
+                    <li><a href="/pages/gaming/index.html">gaming</a></li>
+                </ul>
+            </nav>
+
+            <img src="/resources/images/cover_31.jpg" alt="cover_lanscape" class="image_cover header">
+        </header>
+        <main>
+            <article role="article">
+                <div class="content">
+                    <pre>
+                        git official website <a href="https://git-scm.com">git-scm.com</a>
+                        and it's docs <a href="https://git-scm.com/docs">git-scm.com/docs</a>
+                    </pre>
+                    <pre>
+                        --------------------------------------------------
+                        如何pull和push
+                        
+                        pc b:
+                        git init
+                        git remote add origin xxxx
+                        git pull origin master
+                        
+                        git add .
+                        git commit -m ""
+                        git push -u origin master
+                
+                        pc a:
+                        (pull content from github to my pc)
+                        git pull origin master
+                        
+                        <a href="https://git-scm.com/docs/git-commit">git-commit</a>, - Record changes to the repository
+                
+                        --------------------------------------------------
+                
+                        在commit的时候去掉node_modules文件夹及其子目录与文件
+                
+                        ref: <a href="https://stackoverflow.com/questions/20160503/stage-all-but-one-folder">Stage all but one folder [duplicate]</a>
+                
+                        // won't work!!
+                        git add .
+                        git rm node_modules -r
+                
+                        // working
+                        git add .
+                        git reset -- node_module
+                
+                        <a href="https://git-scm.com/docs/git-reset">git-reset</a>, - Reset current HEAD to the specified state
+                
+                
+                        --------------------------------------------------
+                
+                </pre>
+                </div>
+                <aside class="extra">
+                    <nav>
+                        <ul>
+                            <li><a href="/pages/mobile/index.html">mobile</a></li>
+                            <li><a href="/pages/experiment.html">experiment</a></li>
+                            <li><a href="/pages/video.html">video</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </article>
+            <aside class="sidebar" role="complementary">
+                <nav>
+                    <ul>
+                        <li><a href="/pages/web-development/html/index.html">html</a></li>
+                        <li><a href="/pages/web-development/css/index.html">css</a></li>
+                        <li><a href="/pages/web-development/http/index.html">http</a></li>
+                        <li><a href="/pages/web-development/js/index.html">js</a></li>
+                        <li><a href="/pages/web-development/nodejs/index.html">nodejs</a></li>
+                        <li><a href="/pages/web-development/mongodb/index.html">mongodb</a></li>
+                        <li><a href="/pages/web-development/web/index.html">web</a></li>
+                        <li><a href="/pages/web-development/git/index.html">git</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+        <footer>
+            <div class="count">
+                <p class="visit_count"></p>
+                <p class="click_count"></p>
+                <p class="visit_individual_count"></p>
+            </div>
+            <p>&copy;2020 xutai</p>
+            <p><a href="mailto:2518128561@qq.com">contact me</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
