@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
+```
 untracked file:
 use "git add ." to add untracked file
 
@@ -17,8 +10,4 @@ use "git commmit -m 'this is message'" to make commit and save to local machine
 
 when the color is white:
 use "git push" to push to remote server
-
-
-
-</body>
-</html>
+```
