@@ -35,3 +35,11 @@ testing your ssh connection
 Working with SSH key passphrases
 [https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#)
 
+
+
+how to avoid to reenter passphrase?
+[Auto-launching ssh-agent on Git for Windows](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
+> **~** refers to **C:\Users\Administrator**,
+create the file manually!
+ **~/.profile** doesn't work,
+**~/.bashrc** this works.
