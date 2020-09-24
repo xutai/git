@@ -1,3 +1,4 @@
+### default
 [https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
 
 
@@ -27,19 +28,28 @@ Add the SSH key to your GitHub account.
 
 
 
-testing your ssh connection
+### testing your ssh connection
 [https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection#](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection#)
 
 
 
-Working with SSH key passphrases
+### Working with SSH key passphrases
 [https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#)
 
 
 
-how to avoid to reenter passphrase?
+### how to avoid to reenter passphrase?
 [Auto-launching ssh-agent on Git for Windows](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
-> **~** refers to **C:\Users\Administrator**,
+**~** refers to **C:\Users\Administrator**,
 create the file manually!
  **~/.profile** doesn't work,
 **~/.bashrc** this works.
+> this not working for linux
+
+
+### how to change passphrase?
+[Adding or changing a passphrase](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases#adding-or-changing-a-passphrase)
+```
+ssh-keygen -p
+```
+using this to create an empty passphrase!
